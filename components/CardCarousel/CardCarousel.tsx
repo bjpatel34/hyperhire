@@ -1,6 +1,19 @@
 import React, { useState } from 'react';
 
-const CardCarousel = ({cards}: any) => {
+// Define the type for a card
+interface Card {
+  id: string;
+  title: string;
+  content: string;
+  htmlFor: string; // assuming this is part of your card structure
+}
+
+// Define the props for the CardCarousel component
+interface CardCarouselProps {
+  cards: Card[];
+}
+
+const CardCarousel: React.FC<CardCarouselProps> = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
