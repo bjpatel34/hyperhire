@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 
-// Define the type for a card
 interface Card {
   id: string;
   title: string;
   content: string;
-  htmlFor: string; // assuming this is part of your card structure
+  htmlFor: string;
 }
 
-// Define the props for the CardCarousel component
 interface CardCarouselProps {
   cards: Card[];
 }
@@ -35,7 +33,7 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ cards }) => {
         <input type="radio" name="slider" id="item-2"  checked={currentIndex===1}/>
         <input type="radio" name="slider" id="item-3" checked={currentIndex===2}/>
         <div className="cards">
-        {cards.map((card: any) => (
+        {cards.map((card) => (
           <label key={card?.id} className="card" htmlFor={card.htmlFor} id={card.id}>
                    <div key={card.id} className="bg-white py-[36px] px-[30px] rounded-lg shadow-lg flex flex-col items-center text-black w-full max-w-xs">
                    <img
