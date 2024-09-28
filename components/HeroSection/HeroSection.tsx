@@ -13,7 +13,7 @@ type Card = {
 };
 
 async function fetchCards(): Promise<Card[]> {
-  const res = await fetch('http://localhost:3000/api/cards', { cache: 'no-store' });
+  const res = await fetch('https://hyperhire-3p75.vercel.app/api/cards', { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch cards');
   }
