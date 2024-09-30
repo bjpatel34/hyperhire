@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 import BoxIcon from '@/utils/icons/box-icon';
 import ImageIcon from '@/utils/icons/image-icon';
 import MarketingIcon from '@/utils/icons/marketing-icon';

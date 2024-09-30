@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import RightIcon from "../../utils/icons/right-icon";
 import LeftIcon from "../../utils/icons/left-icon";
